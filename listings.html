@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Listings — HomesPlus</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">HomesPlus</div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="listings.html">Listings</a>
+        <a href="property.html">Property</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Listings</h1>
+
+    <div class="filters">
+      <label>Max price:
+        <input id="priceFilter" type="range" min="100000" max="1000000" step="10000" value="1000000" />
+        <span id="priceValue">₹10,00,000</span>
+      </label>
+    </div>
+
+    <div id="listGrid" class="cards">
+      <!-- duplicate card structure like index.html -->
+      <article class="card" data-price="420000">
+        <img src="images/prop1.jpg" alt="Modern family house" />
+        <div class="card-body">
+          <h3>Modern Family House</h3>
+          <p>3 bed • 2 bath • 2000 sqft</p>
+          <div class="card-footer">
+            <span class="price">₹4,20,000</span>
+            <a class="btn small" href="property.html">Details</a>
+          </div>
+        </div>
+      </article>
+      <!-- more cards -->
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
